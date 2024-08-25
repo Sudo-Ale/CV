@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: Roboto;
+}
+
+main {
+    display: flex;
+    text-align: center;
+}
+
+/*image, contacts, education, language*/
+.section-left{
+    color: white;
+
+    background-color: rgb(22, 48, 62);
+    flex: 1;
+}
+.image-container {
+    margin: 20px;
+}
+.image-container img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+.contacts, .education, .language {
+    text-align: left;
+    margin-left: 120px;
+}
+@media screen and (max-width: 680px){
+    .contacts, .education, .language{
+        text-align: left;
+        margin-left: 30px;
+    }
+}
+.section-left h3 {
+    font-size: 25px;
+    border-bottom: 2px solid white;
+
+    margin-bottom: 20px;
+}
+.section-left .phone, .email, .address, .regional-qualification, .college, .software-dev-qualification, .languages{
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/*experience, skills*/
+.section-right {
+    flex: 2;
+    color: rgb(22, 48, 62);
+
+    padding-right: 30px;
+}
+.section-right .head {
+    height: 200px;
+    width: 100%;
+
+    text-align: left;
+
+    padding-left: 50px;
+    padding-top: 10px;
+
+    margin-bottom: 43px;
+}
+.section-right .head h1 {
+    font-size: 60px;
+    font-weight: 400;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+}
+.section-right .head h1 span {
+    font-weight: bold;
+}
+.section-right .head h2 {
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+.section-right h3 {
+    font-size: 25px;
+    border-bottom: 2px solid rgb(22, 48, 62);
+
+    margin-bottom: 20px;
+}
+.section-right .experience, .skill {
+    text-align: left;
+    margin-left: 40px;
+}
+.section-right .experience .fos-group {
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.experience .fos-group p {
+    font-size: 16px;
+    font-weight: 500;
+}
+.experience .fos-group h4 {
+    font-size: 18px;
+}
+.experience .job-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.skills, .plus-skill {
+    font-size: 16px;
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+.skills ul,
+.plus-skill ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}

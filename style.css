@@ -38,7 +38,14 @@ main {
 
     margin-bottom: 20px;
 }
-.section-left .phone, .email, .address, .regional-qualification, .college, .software-dev-qualification, .languages{
+.section-left 
+    .phone, 
+    .email, 
+    .address, 
+    .regional-qualification, 
+    .college, 
+    .software-dev-qualification, 
+    .languages {
     margin-bottom: 30px;
 
     display: flex;
@@ -121,7 +128,7 @@ main {
     gap: 6px;
 }
 
-@media screen and (max-width: 1048px){
+@media screen and (max-width: 1280px){
     .contacts, .education, .language{
         text-align: left;
         margin-left: 30px;
@@ -161,5 +168,13 @@ main {
     .section-right .head {
         text-align: center;
         margin-bottom: 80px;
+    }
+}
+
+
+@media print {
+    .contacts, .education, .language{
+        text-align: left;
+        margin-left: 30px;
     }
 }

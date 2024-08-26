@@ -158,6 +158,7 @@ main {
     
     .contacts, .education, .language {
         text-align: center;
+        margin: 0;
     }
 
     .section-right .head {

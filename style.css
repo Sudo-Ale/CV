@@ -151,14 +151,11 @@ main {
         display: flex;
         flex-direction: column;
     }
-
-    .image-container {
-        margin-left: 55px;
-    }
     
     .contacts, .education, .language {
         text-align: center;
-        margin: 0;
+        margin-left: 100px;
+        margin-right: 100px;
     }
 
     .section-right .head {

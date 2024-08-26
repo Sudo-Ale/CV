@@ -16,6 +16,8 @@ main {
 
     background-color: rgb(22, 48, 62);
     flex: 1;
+
+    min-height: 100vh;
 }
 .image-container {
     margin: 20px;
@@ -29,12 +31,7 @@ main {
     text-align: left;
     margin-left: 120px;
 }
-@media screen and (max-width: 680px){
-    .contacts, .education, .language{
-        text-align: left;
-        margin-left: 30px;
-    }
-}
+
 .section-left h3 {
     font-size: 25px;
     border-bottom: 2px solid white;
@@ -122,4 +119,49 @@ main {
     display: flex;
     flex-direction: column;
     gap: 6px;
+}
+
+@media screen and (max-width: 1048px){
+    .contacts, .education, .language{
+        text-align: left;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .section-right .head {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .contacts, .education, .language{
+        text-align: left;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 680px){
+    .contacts, .education, .language{
+        text-align: left;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-container {
+        margin-left: 55px;
+    }
+    
+    .contacts, .education, .language {
+        text-align: center;
+    }
+
+    .section-right .head {
+        text-align: center;
+        margin-bottom: 80px;
+    }
 }
